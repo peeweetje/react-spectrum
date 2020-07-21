@@ -9,8 +9,7 @@
   },
   "scripts": {
     "build-icons": "cross-env BUILD_ENV=production babel --root-mode upward src -d . --extensions '.tsx'",
-    "make-icons": "babel-node --presets @babel/env ./scripts/generateIcons.js -i '[]' && tsc --project ./tsconfig.types.json",
-    "icons": "yarn make-icons && yarn build-icons"
+    "make-icons": "babel-node --presets @babel/env ./scripts/generateIcons.js -i '[]' && tsc --project ./tsconfig.types.json"
   },
   "dependencies": {
     "@adobe/react-spectrum-ui": "^1.0.0",
