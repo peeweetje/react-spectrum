@@ -49,7 +49,7 @@ jobs:
 
       - run:
           name: test
-          command: make ci-test
+          command: yarn ci-test
 
   lint:
     docker:
@@ -62,7 +62,7 @@ jobs:
 
       - run:
           name: lint
-          command: make lint
+          command: yarn lint
 
   storybook:
     docker:
@@ -76,7 +76,7 @@ jobs:
 
       - run:
           name: build storybook
-          command: make storybook
+          command: yarn build-storybook:prod
 
       - persist_to_workspace:
           root: dist
